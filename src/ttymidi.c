@@ -248,7 +248,7 @@ void read_midi_from_serial_port(int serial, snd_seq_t* seq, int port_out_id)
                 }
                 printf("\n");
 
-                snd_seq_ev_set_sysex(&ev, i , buf);
+                snd_seq_ev_set_sysex(&ev, i+1 , buf);
                 break;
             default:
                 sync = 0;
